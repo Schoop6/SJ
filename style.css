@@ -79,7 +79,7 @@ figurelt
 /* The navbar container */
 .menu
 {
-    margin:0;
+    margin:10px;
     overflow: hidden;
     background-color: red;
     width: 100%;
@@ -95,10 +95,11 @@ figurelt
     font-size: 110%;
     padding: 14px 16px;
     text-decoration: none;
+    vertical-align:center;
 }
 
 /* Links - change color on hover */
-.menu a:hover
+.menu a:hover	    
 {
     background-color: #ddd;
     color: black;
@@ -116,7 +117,7 @@ figurelt
 .mainpart
 {
     background-color: grey;
-    margin:0;
+    margin:10px;
 
 
 }
