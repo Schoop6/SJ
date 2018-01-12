@@ -1,0 +1,69 @@
+html, body
+{
+    height:100%;
+    padding:0;
+    margin:0;
+    background: grey;
+}
+
+.header
+{
+    background-color: #e80b0b;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "Lobster Two", cursive;
+    margin:0;
+}
+
+
+/* The navbar container */
+.menu
+{
+    margin:0;
+    overflow: hidden;
+    background-color: red;
+}
+
+/* Navbar links */
+.menu a
+{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 110%;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.menu a:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+
+.headpic
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.mainpart
+{
+    background-color: grey;
+    margin:0;
+
+
+}
+
+.footer
+{
+    background-color:grey;
+}
