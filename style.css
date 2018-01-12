@@ -8,11 +8,25 @@ html, body
 }
 
 
+.column
+{
+    float: left;
+    width: 50%;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
 
 .abouttext
 {
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 100px;
     float:right;
 }
 
@@ -79,7 +93,6 @@ figurelt
 /* The navbar container */
 .menu
 {
-    margin:10px;
     overflow: hidden;
     background-color: red;
     width: 100%;
@@ -116,8 +129,13 @@ figurelt
 
 .mainpart
 {
+    padding-top: 100px;
+
     background-color: grey;
     margin:10px;
+    margin-right:10px;
+    margin-left:100px;
+
 
 
 }
