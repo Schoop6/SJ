@@ -1,14 +1,71 @@
 html, body
 {
     height:100%;
+    width:100%;
     padding:0;
     margin:0;
     background: grey;
 }
 
+
+
+.abouttext
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    float:right;
+}
+
+.aboutpic
+{
+    float:left;
+    display:block;
+    max-width:200px;
+    max-height:200px;
+    width:auto;
+    height:auto;
+    margin:auto;
+}
+
+div
+{
+    width: 90%;
+}
+
+figurert
+{
+    float:right;
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+    text-indent: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+    display:block;
+}
+
+figurelt
+{
+    float:left;
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+    text-indent: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+    display:block;
+}
+
+.names
+{
+    text-align: center;
+    color: black;
+    font-size: 160%;
+    font-weight: bold;
+    margin:0;
+}
 .header
 {
-    background-color: #e80b0b;
     text-align: center;
     padding: 20px;
     color: black;
@@ -25,6 +82,7 @@ html, body
     margin:0;
     overflow: hidden;
     background-color: red;
+    width: 100%;
 }
 
 /* Navbar links */
