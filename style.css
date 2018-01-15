@@ -15,6 +15,11 @@ html, body
     
 }
 
+indent
+{
+    padding-left:1.8em;
+}
+
 .row:after
 {
     content: "";
@@ -97,7 +102,7 @@ figurelt
     color: black;
     font-size: 200%;
     font-weight: bold;
-    font-family: "Apple Chancery", cursive;
+    font-family: "Corbel", cursive;
     margin:0;
 }
 
