@@ -13,35 +13,23 @@
     
   </head>
   <body>
-    <!--including javascript SDK for facebook plugins-->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
     
     <!-- webpage content goes here in the body -->
 
     <div class="menu">
       
-      <a href="home.html">Home</a>
+      <a class="active" href="home.html">Home</a>
       <a href="about.html">About</a>
       <a href="Schedule.html">Schedule</a>
       <a href="contact.html">Contact</a>
-      <a href="https://www.facebook.com/Sugar-Jack-375244639306872"
-	 style="float:right">
-	<img src="fblogo.png" alt="Facebook"
-	     style="height:15px; padding:0px 0px">
-      </a>
 
     </div>
 
 
-    <div class="header">
-      Sugar Jack
+    <div class="abouttext2">
+      <div class="header">
+	Sugar Jack
+      </div>
     </div>
 
     <div class="abouttext" style="text-align:center">
@@ -56,18 +44,18 @@
       <div class="row">
 	<div class="column">
 	  <iframe class="headpic"
-		  width="560"
+		  width="540"
 		  height="315"
 		  src="https://www.youtube.com/embed/cnCDCeIoZWY"
 		  frameborder="0"
-		  style="float:left"
+		  style="float:center"
 		  allow="autoplay; encrypted-media" allowfullscreen>
 	  </iframe>
 	</div>
 
 	<div class="column">
 	  <video loop autoplay
-		 style="float:right"
+		 style="float:center"
 		 height="315"
 		 width="auto" >
 	    <source src="https://media.giphy.com/media/l49JF5dOXaDNXUlBC/source.mp4"
@@ -76,20 +64,24 @@
 	  </video>
 	</div>
       </div>
+      
+      <div class="column" style="text-align:center">
+	<iframe
+	  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSugar-Jack-375244639306872%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+	  width="500"
+	  height="1000" style="float:center"
+	  scrolling="no"
+	  frameborder="0"
+	  allowTransparency="true">
+	</iframe>
+      </div>
 
+      
+      <div class="column">
+	something should go here
+      </div>
 
-    </div>
-
-    <div class="mainpart">
-      <iframe
-	src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSugar-Jack-375244639306872%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-	width="500"
-	align="right"
-	height="1000" style="border:none;overflow:hidden"
-	scrolling="no"
-	frameborder="0"
-	allowTransparency="true">
-      </iframe>
+      
     </div>
 
   </body>
