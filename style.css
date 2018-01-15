@@ -8,13 +8,6 @@ html, body
     
 }
 
-<<<<<<< HEAD
-
-.column
-{
-    float: left;
-    width: 50%;
-=======
 .video-container
 {
     position:relative;
@@ -37,9 +30,7 @@ html, body
     float: left;
     width: 48%;
     height:auto;
-    overflow:hidden;
->>>>>>> 528b61e... made a lot of fixes
-    
+    overflow:hidden;    
 }
 
 indent
@@ -51,10 +42,7 @@ indent
 {
     content: "";
     display: table;
-<<<<<<< HEAD
-=======
     width:100%;
->>>>>>> 528b61e... made a lot of fixes
     clear: both;
     margin-bottom:5%;
     
@@ -187,14 +175,7 @@ figurelt
 {
     padding-top: 100px;
     background-color: grey;
-<<<<<<< HEAD
-    margin:10px;
-    margin-right:10px;
-    margin-left:100px;
-=======
     margin-top:10px;
->>>>>>> 528b61e... made a lot of fixes
-
 }
 
 .footer
