@@ -27,7 +27,7 @@ html, body
 }
 .column
 {
-    float: left;
+    float: right;
     width: 48%;
     height:auto;
     overflow:hidden;    
@@ -45,7 +45,6 @@ indent
     width:100%;
     clear: both;
     margin-bottom:5%;
-    
 }
 
 .abouttext
@@ -176,6 +175,10 @@ figurelt
     padding-top: 100px;
     background-color: grey;
     margin-top:10px;
+    width:100%;
+    max-width:1000px;
+    float:center;
+    border:1px solid;
 }
 
 .footer
@@ -183,7 +186,7 @@ figurelt
     background-color:grey;
 }
 
-@media (max-width: 750px)
+@media (max-width: 875px)
 {
     .column
     {
