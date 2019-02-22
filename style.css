@@ -187,7 +187,7 @@ iframe.fbframe
     background-color:grey;
 }
 
-@media (max-width: 875px)
+@media (max-width: 600px)
 {
     .column
     {
