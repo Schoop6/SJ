@@ -99,7 +99,6 @@ def verifyClicks():
                 uname = p['username']
                 print("username: {}".format(uname))
 
-            #    print(dongers)
                 if player in dongers: #if your player clicks
                     cur.execute( #update the pick with the verification bit set
                         'UPDATE pick SET click = (%s)'
@@ -167,7 +166,7 @@ def create_app(test_config=None):
         scheduler.start()
         scheduler.add_job(
             func=verifyClicks,
-            trigger=IntervalTrigger(seconds=33),
+            trigger=IntervalTrigger(minutes=33),
             id='verify picks',
             name='Verify if clicks should be awarded points or not',
             replace_existing=True)
