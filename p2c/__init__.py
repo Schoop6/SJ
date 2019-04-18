@@ -60,10 +60,6 @@ def verifyClicks():
             HOMERS[yesterday] = None
         if not date in HOMERS:
             HOMERS[date] = None
-
-        print("Status")
-        print(statusYes)
-        print(status)
             
         if HOMERS[date] is None and status in over:
             hrs, error = get_dongers(date, "orioles")
@@ -73,12 +69,13 @@ def verifyClicks():
                 HOMERS[date] = hrs
                 print("Homers on {} are {}".format(date, hrs))
         if HOMERS[yesterday] is None and statusYes in over:
-             hrs, error = get_dongers(yesterday, "orioles")
-             if error != "":
-                 print(error)
-             HOMERS[yesterday] = hrs
-             print("Homers on {} are {}".format(yesterday, hrs))
-    #    print("*******CHECKING STATUS*******")
+            hrs, error = get_dongers(yesterday, "orioles")
+            if error != "":
+                print(error)
+            else:    
+                HOMERS[yesterday] = hrs
+                print("Homers on {} are {}".format(yesterday, hrs))
+            #    print("*******CHECKING STATUS*******")
                 
         if status in over or statusYes in over:
             print("******UNVERIFIED PICKS WITH POTENTIAL NEW STATUS********")
@@ -86,7 +83,7 @@ def verifyClicks():
                 print("going through picks")
                 s = getStatus(p['created'].date(), "orioles")
                 if s not in over:
-                #    print("******GAME NOT OVER YET*******")
+                    #    print("******GAME NOT OVER YET*******")
                     continue
                 print(p['created'].date())
                 print(date)
@@ -128,7 +125,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',
+        SECRET_KEY='dev', DEBUG=False
     )
 
     if test_config is None:
