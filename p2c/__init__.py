@@ -102,7 +102,7 @@ def verifyClicks():
                         'WHERE id = (%s)',
                         ('1', ident))
                     cur.execute( #update the total score of the player
-                        'UPDATE user SET score = score + 1 WHERE username = (%s)',
+                        'UPDATE users SET score = score + 1 WHERE username = (%s)',
                         (uname, ))
                     print("updating {}'s click to yes".format(uname))
                     db.commit()
