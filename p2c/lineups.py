@@ -79,18 +79,24 @@ def get_GDurl(date, team):
 
 
     gms = html.split("game id=")
+    found = False
+
     for g in gms:
         i = g.find(team.capitalize())
         if i != -1:
+            found = True
             endIndex = g.find("league=") - 2
             print("end " + str(endIndex))
             html = g[1:endIndex]
             
+
+    if found is not True:
+        return None #shoudl indicate off day
     
     html = "/gid_" + html
 
     gdURL = baseURL + html + "/boxscore.xml"
-    print(gdURL)
+    #print(gdURL)
     
     return gdURL
 
@@ -100,6 +106,9 @@ def get_dongers(date, team):
     error = ""
     team = team.lower()
     gdURL = get_GDurl(date, team)
+
+    if(gdURL is None):
+        return dongers, "Day off?"
 
     try:
         request = Request(gdURL)
@@ -154,6 +163,7 @@ def get_lineups(date, team):
   #  print(date)
     team = team.lower()
     gdURL = get_GDurl(date, team)
+    
     if gdURL is None:
         return lineups, "Off day today?"
     #connecting to gameday to get the lineup
@@ -164,7 +174,7 @@ def get_lineups(date, team):
 
     #this should only really happen if there's a failure in how I got the url to begin with
     except URLError as err:
-       # print(gdURL)
+        #print(gdURL)
         return lineups, err.code
     
     homeTeam = re.search('home_sname="(\w*|\w* \w*)"', gameday)
@@ -192,7 +202,7 @@ def get_lineups(date, team):
         if match is None:
             continue
         match = re.search('name_display_first_last="(\w* \w*|\w* \w* \S*)"', b)
-        print(match.group(1))
+        #print(match.group(1))
         lineups.append(match.group(1))
     
     if len(lineups) is 9:
