@@ -6,11 +6,40 @@
     
     <meta name="author" content="Matthew Bressler" />
     <meta name="description" content="Sugar Jack band website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" type="image/jpg" href="logo.jpg" />
 
     <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
     <link rel="stylesheet" href="style.css" type="text/css" />
+      <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    .schedc {
+    float: left;
+    }
+
+    .left, .right {
+    width: 20%;
+    padding: 10px;
+    }
+
+    .middle {
+    width: 60%;
+    padding: 10px;
+    }
+
+    .schedrow:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+
     
+</style>
   </head>
   <body>
     
@@ -70,8 +99,8 @@
 	    </iframe>
 	  </div>
 
-	  <div class="video-container" style="max-width:560px">
-	    <video loop autoplay
+	  <div class="video-container" style="max-width:500px">
+	    <video loop autoplay muted
 		   width="100%"
 		   height="auto"
 		   >
@@ -94,17 +123,20 @@
 	    allowTransparency="true">
 	  </iframe>
 	</div>
-	<div class="column" style="padding: 5px;">
-	  <img src="images/home4.jpg" alt="Snow" style="width:100%">
+      </div>
+
+      <div class="row">
+	<div class="column" style="padding: 20px;">
+	  <img src="images/home4.jpg" alt="Band1" style="width:100%">
 	</div>
-	<div class="column" style="padding: 5px;">
-	  <img src="images/home2.jpg" alt="Forest" style="width:100%">
+	<div class="column" style="padding: 20px;">
+	  <img src="images/home2.jpg" alt="Band2" style="width:100%">
 	</div>
-	<div class="column" style="padding: 5px;">
-	  <img src="images/home3.jpg" alt="Mountains" style="width:100%">
+	<div class="column" style="padding: 20px;">
+	  <img src="images/home3.jpg" alt="Band3" style="width:100%">
 	</div>
-	<div class="column" style="padding: 5px;">
-	  <img src="images/home6.jpg" alt="Mountains" style="width:100%">
+	<div class="column" style="padding: 20px;">
+	  <img src="images/home6.jpg" alt="Band4" style="width:100%">
 	</div>
 
 
