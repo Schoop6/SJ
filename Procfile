@@ -1,0 +1,1 @@
+web: gunicorn p2c.wsgi:application
